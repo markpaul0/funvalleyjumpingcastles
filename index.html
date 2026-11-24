@@ -28,11 +28,20 @@
 }
 @media(min-width:1450px){.hero{border-radius:28px}.hero h1{font-size:clamp(95px,8.2vw,143px)}.hero p{font-size:21px;max-width:570px}.title{font-size:clamp(55px,5.5vw,84px)}.card h3{font-size:23px}}
 @media(max-width:650px){.container{width:calc(100% - 26px)}.hero-art{transform:none}}
+
+/* Hero-only invitation to play */
+.hero-game-prompt{margin-top:32px;position:relative;z-index:6}
+.hero-play{display:inline-flex;align-items:center;text-align:left;gap:13px;background:#fff;border:2px solid var(--ink);color:var(--ink);border-radius:21px;box-shadow:5px 6px 0 var(--purple);padding:12px 18px;white-space:normal;transition:transform .2s,box-shadow .2s}
+.hero-play strong{font:700 23px Fredoka;display:block;line-height:1.05}
+.hero-play small{font:700 11px 'DM Sans',sans-serif;display:block;margin-top:4px}
+.hero-play .play-icon{font-size:29px}
+.hero-play:hover{transform:translateY(-4px);box-shadow:5px 10px 0 var(--purple)}
+@media(max-width:650px){.hero-game-prompt{margin-top:18px}.hero-play{padding:10px 14px}.hero-play strong{font-size:20px}.hero-play small{font-size:10px}.hero-play .play-icon{font-size:24px}}
 </style></head>
 <body>
 <div class="notice">🎉 GAUTENG’S HOME OF BIG FUN <b>✦</b> BIRTHDAYS, SCHOOLS &amp; FAMILY EVENTS</div>
-<header class="container nav"><a class="brand" href="#home"><span class="mark">✳</span><span>fun valley<br><em>jumping castles.</em></span></a><nav class="navlinks" id="nav"><a href="#equipment">Equipment</a><a href="#how">How it works</a><a href="#faq">FAQs</a><a href="#enquire">Get a quote →</a></nav><a class="btn btn-dark" href="#enquire">Plan some fun ↗</a><button class="play-trigger" id="playTrigger" type="button">🎮 Let’s play</button><button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">☰</button></header>
-<main id="home"><div class="hero"><div class="hero-copy"><span class="eyebrow">✦ Your happy place for party hire!</span><h1>Jump into<br><span>the fun.</span></h1><p>Castles, slides, soft play and little extras that make a big day. Build your party wish list and let's make memories.</p><div class="actions"><a class="btn btn-dark" href="#equipment">See the equipment ↗</a><a class="btn btn-white" href="#enquire">Get a quote</a></div></div><svg class="hero-art" viewBox="0 0 650 520" role="img" aria-label="Animated illustration of a colourful bouncing castle">
+<header class="container nav"><a class="brand" href="#home"><span class="mark">✳</span><span>fun valley<br><em>jumping castles.</em></span></a><nav class="navlinks" id="nav"><a href="#equipment">Equipment</a><a href="#how">How it works</a><a href="#faq">FAQs</a><a href="#enquire">Get a quote →</a></nav><a class="btn btn-dark" href="#enquire">Plan some fun ↗</a><button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">☰</button></header>
+<main id="home"><div class="hero"><div class="hero-copy"><span class="eyebrow">✦ Your happy place for party hire!</span><h1>Jump into<br><span>the fun.</span></h1><p>Castles, slides, soft play and little extras that make a big day. Build your party wish list and let's make memories.</p><div class="actions"><a class="btn btn-dark" href="#equipment">See the equipment ↗</a><a class="btn btn-white" href="#enquire">Get a quote</a></div><div class="hero-game-prompt"><button class="play-trigger hero-play" id="playTrigger" type="button"><span class="play-icon" aria-hidden="true">🎮</span><span><strong>Click to play!</strong><small>Try Valley Bounce — 30 seconds of fun</small></span><span aria-hidden="true">↗</span></button></div></div><svg class="hero-art" viewBox="0 0 650 520" role="img" aria-label="Animated illustration of a colourful bouncing castle">
 <ellipse cx="345" cy="461" rx="255" ry="33" fill="#c49c61" opacity=".25"/>
 <path d="M120 253L152 121 216 150 250 225Z" fill="#ed588b"/><path d="M320 205L350 83 417 102 450 209Z" fill="#7956e8"/><path d="M485 246L523 108 588 158 593 262Z" fill="#ef699d"/>
 <rect x="125" y="217" width="470" height="226" rx="36" fill="#7956e8"/><path d="M126 299h468v107q0 38-38 38H164q-38 0-38-38z" fill="#f36e96"/>

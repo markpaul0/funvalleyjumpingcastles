@@ -127,7 +127,7 @@ document.getElementById('copy').onclick=async()=>{try{await navigator.clipboard.
 const trigger=document.getElementById('playTrigger'),modal=document.getElementById('gameModal'),close=document.getElementById('gameClose'),stage=document.getElementById('gameStage'),canvas=document.getElementById('gameCanvas'),ctx=canvas.getContext('2d'),screen=document.getElementById('gameScreen'),screenTitle=document.getElementById('gameScreenTitle'),screenText=document.getElementById('gameScreenText'),startBtn=document.getElementById('gameStart'),scoreEl=document.getElementById('gameScore'),timeEl=document.getElementById('gameTime'),bestEl=document.getElementById('gameBest');let priorFocus=null,frame=0,playing=false,score=0,best=0,remaining=30,last=0,startTime=0,targetX=350,stars=[],player={x:350,y:100,vy:0},castles=[{x:40,w:190,y:315,c:'#ff6b9b'},{x:259,w:180,y:310,c:'#7653e7'},{x:468,w:190,y:315,c:'#ffcd52'}];const W=700,H=400;
 const scoreboardUrl='https://zphnmxcarjrrpbxchsdm.supabase.co/rest/v1/funvalley_game_scores';
 const scoreboardKey='sb_publishable_YG_VSS3b3ZGjvOHqjwIUWg_mI29aSg2';
-const scoreboardHeaders={apikey:scoreboardKey,Authorization:'Bearer '+scoreboardKey};
+const scoreboardHeaders={apikey:scoreboardKey};
 const scoreForm=document.getElementById('leaderboardForm'),scoreEntry=document.getElementById('gameScoreEntry'),nameInput=document.getElementById('leaderboardName'),saveButton=document.getElementById('leaderboardSubmit'),boardList=document.getElementById('leaderboardList'),boardStatus=document.getElementById('leaderboardStatus');
 let scoreSaved=false;
 async function loadLeaderboard(){
